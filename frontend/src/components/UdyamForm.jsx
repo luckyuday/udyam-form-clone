@@ -97,7 +97,7 @@ function UdyamForm() {
           {currentStep > 1 ? (
             <button
               type="button"
-              className="prev-button"
+              className="prev-button btn btn-secondary"
               onClick={handlePrevStep}
             >
               Previous
@@ -110,13 +110,13 @@ function UdyamForm() {
           {currentStep < formSchema.steps.length ? (
             <button
               type="button"
-              className="next-button"
+              className="next-button btn btn-primary"
               onClick={handleNextStep}
             >
               Next
             </button>
           ) : (
-            <button type="submit" className="submit-button">
+            <button type="submit" className="submit-button btn btn-primary">
               Submit Registration
             </button>
           )}
