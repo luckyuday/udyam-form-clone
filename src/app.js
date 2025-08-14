@@ -5,6 +5,11 @@ const prisma = new PrismaClient();
 const cors = require("cors");
 app.use(express.json());
 app.use(cors());
+app.get("/", (req, res) => {
+  res.json({
+    message: "Udyog backend",
+  });
+});
 app.post("/register", async (req, res) => {
   const {
     ctl00$ContentPlaceHolder1$txtadharno: aadhaarNumber,
