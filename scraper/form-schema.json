@@ -1,0 +1,70 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "title": "Aadhaar Validation",
+      "fields": [
+        {
+          "id": "ctl00_ContentPlaceHolder1_txtadharno",
+          "name": "ctl00$ContentPlaceHolder1$txtadharno",
+          "label": "Aadhaar Number",
+          "type": "text",
+          "placeholder": "Your Aadhaar No",
+          "validation": {
+            "required": true,
+            "regex": "^\\d{12}$",
+            "errorMessage": "Please enter a valid 12-digit Aadhaar number."
+          }
+        },
+        {
+          "id": "ctl00_ContentPlaceHolder1_txtownername",
+          "name": "ctl00$ContentPlaceHolder1$txtownername",
+          "label": "Name as per Aadhaar",
+          "type": "text",
+          "placeholder": "Name as per Aadhaar",
+          "validation": {
+            "required": true,
+            "regex": "/^[a-zA-Z ]+$/",
+            "errorMessage": "Name is required."
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "PAN Validation",
+      "fields": [
+        {
+          "id": "ctl00_ContentPlaceHolder1_ddltypeoforgn",
+          "name": "ctl00$ContentPlaceHolder1$ddltypeoforgn",
+          "label": "Type of Organisation",
+          "type": "select",
+          "options": [
+            { "value": "1", "label": "Proprietorship" },
+            { "value": "2", "label": "Partnership Firm" },
+            { "value": "3", "label": "Private Limited Company" },
+            { "value": "4", "label": "Public Limited Company" },
+            { "value": "5", "label": "Self Help Group (SHG)" },
+            { "value": "6", "label": "Other" }
+          ],
+          "validation": {
+            "required": true,
+            "errorMessage": "Please select an organisation type."
+          }
+        },
+        {
+          "id": "ctl00_ContentPlaceHolder1_txtpan",
+          "name": "ctl00$ContentPlaceHolder1$txtpan",
+          "label": "PAN",
+          "type": "text",
+          "placeholder": "Enter PAN Number",
+          "validation": {
+            "required": true,
+            "regex": "^[A-Z]{5}[0-9]{4}[A-Z]{1}$",
+            "errorMessage": "Please enter a valid PAN format."
+          }
+        }
+      ]
+    }
+  ]
+}
