@@ -24,7 +24,7 @@ function UdyamForm() {
     const backendapi = import.meta.env.VITE_API_BASE_URL;
     try {
       // Use the dynamic apiUrl variable here
-      const response = await axios.post(`${backendapi}/api/register`, data);
+      const response = await axios.post(`${backendapi}/register`, data);
 
       console.log("Server Response:", response.data);
       alert(`Success: ${response.data.message}`);
