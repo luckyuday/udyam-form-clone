@@ -1,0 +1,16 @@
+main {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+main > h1 {
+  font-size: 3em;
+  text-align: center;
+  line-height: 3rem;
+  font-family: "Mozilla Headline";
+}

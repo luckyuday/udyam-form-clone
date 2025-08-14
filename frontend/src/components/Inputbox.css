@@ -1,0 +1,14 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.error {
+  color: var(--red);
+  font-size: 1rem;
+}
+select {
+  background-color: transparent;
+  padding: 1rem;
+  outline: none;
+}
